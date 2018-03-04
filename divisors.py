@@ -1,8 +1,8 @@
-#!/usr/bin/python
-
-x=input('Enter a number')
-count=0
-for i in range(1,x+1):
-	if(x%i==0):
-		count+=1
-print "no of divisors:"+str(count)
+def divisors(n):
+    temp=n
+    list=[];
+    for i in range(1,temp+1):
+        if(temp%i==0):
+            list.append(i)
+    print(len(list))
+divisors(int(input("Enter a number")))
